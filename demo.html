@@ -1,0 +1,345 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS - Final Project</title>
+    <link rel="stylesheet" type="text/css" href="demo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f06a656687.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+</head>
+<body>
+    <header>
+       <!--<nav>
+            <img src="str.svg" alt="logo"/>
+            <div id="topleftbar">
+                <span id="dropdown">Services<i class="fa fa-caret-down" style="font-size: 15px;"></i></span>
+                <div class="dropdown-content">
+                        <button><a href="www.google.com ">Menu item1</a></button>
+                        <a>Menu item2</a>
+                        <a>Menu item3</a>
+                  </div>
+                <button><span>Watch Video</span></button>
+                <span>Blocks &nbsp;<i class="fa fa-caret-down" style="font-size: 15px;"></i></span>
+                <button>BUY NOW</button>
+            </div>
+        </nav> --> 
+
+        <nav class="nav">
+            <img src="str.svg" alt="logo"/>
+            <a href="/" class="logo">Streakzy</a>
+    
+            <div class="hamburger">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+    
+            <div class="nav__link hide">
+              <a href="#">home</a>
+              <a href="#">about</a>
+              <a href="#">contact</a>
+              <a href="#">blog</a>
+            </div>
+          </nav>
+
+          <script>
+            const hamburger = document.querySelector('.hamburger');
+        const navLink = document.querySelector('.nav__link');
+        
+        hamburger.addEventListener('click', () => {
+          navLink.classList.toggle('hide');
+        });
+        
+          </script>
+
+    </header>
+    <main>
+
+
+
+        <!-- Slide Code
+
+            <h2>Automatic Slideshow</h2>
+        <p>Change image every 2 seconds:</p>
+        
+        <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="st2.png" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img  src="str.svg" style="width:100%"><a href="www.google.com"></a>
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="bg.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+
+        <script>
+         let slideIndex = 0;
+         showSlides();
+         
+         function showSlides() {
+           let i;
+           let slides = document.getElementsByClassName("mySlides");
+           let dots = document.getElementsByClassName("dot");
+           for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+           }
+           slideIndex++;
+           if (slideIndex > slides.length) {slideIndex = 1}    
+           for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" active", "");
+           }
+           slides[slideIndex-1].style.display = "block";  
+           dots[slideIndex-1].className += " active";
+           setTimeout(showSlides, 2000); // Change image every 2 seconds
+         }
+         </script>
+
+<div class="search">
+    <input type="text" placeholder="Search..">
+</div>-->
+
+<!--<section id="im1">
+    <img class="newi" src="man.png" alt="">
+ </section>-->
+        <section id="main1">
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+
+           <h1 id="sec1-heading">Streakzy - A brand</h1>
+           <h1 id="sec1-heading">Established in India</h1>
+           <p id="desc">Welcome to <b>Streakzy India</b>, You believe in us <br>and we complete your work.</p> <form>
+            <button id="btn-android">ANDROID<i class="material-icons">android</i></button>
+            <button id="btn-ios"> IOS <i class="fa-brands fa-apple"></i></button>
+            <button id="btn-win">WINDOWS <i class="fa-brands fa-windows"></i></button>
+            
+           
+            </form>
+        </section>
+
+
+        <section id="main2">
+            <div id="step1">
+                <!--<i id="icon" class="fa fa-cut" style="font-size: 96px;"></i>-->
+                <!--<i class="material-icons" id="icon" style="font-size: 96px;">work</i>-->
+                <i class="material-icons" id="icon1" style="font-size: 96px;"><img src="step1.png" alt=""></a></i>
+                <p class="step-label1">Best  Service</p>
+                <p class="step-desc1">We provide the best services<br>by verifying the personels.<br>They perform good quality work <br>and our trained by our experts <br>and other professionals.</p>
+            </div>
+            <div id="step2">
+                <i class="material-icons" id="icon1" style="font-size: 96px;"><img src="c.png" alt=""></a></i>
+                <!--<i id="icon" class="fa fa-paint-brush" style="font-size: 96px;"></i>-->
+                <p class="step-label1">Customer Satisfaction</p>
+                <p class="step-desc1">Customer satisfaction is our first and foremost<br>Priority. As a service based company our main moto<br>is to satisfy our customers the more customers <br>we gain,he bigger our Family grows.</p>
+            </div>
+            <div id="step3">
+                <i class="material-icons" id="icon1" style="font-size: 96px;"><img src="atoz.png" alt=""></a></i>
+                <!--<i id="icon" class="fa fa-shopping-bag" style="font-size: 96px;"></i>-->
+                <p class="step-label1">A to Z.</p>
+                <p class="step-desc1">In the content of vitamin C, sweet<br>peppers are superior to lemons and<br>even black currants! The greatest<br>amount of vitamin is contained<br>around the stalk, that is, in the part of the product that is usually cut during<br>cleaning.</p>
+            </div>
+            <div id="step4">
+                <i class="material-icons" id="icon1" style="font-size: 96px;"><img src="cst.png" alt=""></a></i>
+                <!--<i id="icon" class="fa fa-shopping-bag" style="font-size: 96px;"></i>-->
+                <p class="step-label1">Customer support.</p>
+                <p class="step-desc1">If you sometimes eat hot chili<br>peppers, this will help normalize<br>cerebral circulation, ease the<br>condition with bronchial asthma,<br>cough, sore throat, flu.</p>
+            </div>
+        </section>
+        <section id="main3">
+            <div>
+                <h1 id="fresh-food-text">Indias</h1>
+                <h1 id="heading">Streakzy Store!</h1>
+                <p id="section3-desc">We will complete your work with total responsibility.</p>
+            </div>
+            <div id="class-wrapper">
+                <div class="store-item">
+                    <div class="icon-wrapper">
+                    <i class="fa fa-camera" id="item-heading" style="font-size: 60px;"></i>
+                    </div>
+                    <h1>Fresh Vegetables</h1>
+                    <p>Use for cooking several<br>types of vegetable oil.</p>
+                </div>
+                <div class="store-item">
+                    <div class="icon-wrapper">
+                    <i class="fa-rocket fa" id="item-heading" style="font-size: 60px;"></i>
+                    </div>
+                    <h1>High Quality</h1>
+                    <p>This is the best source of<br>essential fatty acids for<br>the body.</p>
+                </div>
+                <div class="store-item">
+                    <div class="icon-wrapper">
+                    <i class="fa-rocket fa" id="item-heading" style="font-size: 60px;"></i>
+                    </div>
+                    <h1>Sale</h1>
+                    <p>It is very good, if in the<br>kitchen there will always be several bottles with<br>different oils.</p>
+                </div>
+                <div class="store-item">
+                    <div class="icon-wrapper">
+                    <i class="fa-rocket fa" id="item-heading" style="font-size: 60px;"></i>
+                    </div>
+                    <h1>Best Price</h1>
+                    <p>Remember that unrefined<br>oils are not suitable for<br>heat treatment.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Testimony-->
+
+        <section id="testimonial-section">
+            <p id="testimonial-heading">The backbone of our Company</p>
+            <h3 id="slogan">Meet Our Team!</h3>
+            <p id="testimonial-desc">Meet the main backbone of the company. They have literally <br> Worked hard to bring <b>Streakzy</b> to this extreme Level</p>
+            <div id="testimonials-wrapper">
+                <div class="testimonial-item">
+                    <img src="https://mobirise.com/extensions/organicamp/assets/images/face5.jpg" alt="image1"/>
+                    <p class="testimonial-msg">Sales consultants are very polite.<br>Many of the products have tried and<br>are ready to prompt and recommend<br>to customers. The staff shows that<br>they completely share the philosophy<br>of proper nutrition, if you can say so.</p>
+                    <h3 class="testimonial-by">VERONICA KING</h3>
+                    <p class="job">Cook</p>
+                </div>
+                <div class="testimonial-item1">
+                    <img src="https://mobirise.com/extensions/organicamp/assets/images/face6.jpg" alt="image2"/>
+                    <p class="testimonial-msg">The assortment is very wide. From<br>useful organic oils, cereals and teas<br>to specific products for vegetarians,<br>such as sausages and pies without<br>meat.</p>
+                    <h3 class="testimonial-by">KENNETH REBELLO</h3>
+                    <p class="job">FOUNDER</p>
+                </div>
+                <div class="testimonial-item2">
+                    <img src="https://mobirise.com/extensions/organicamp/assets/images/face7.jpg" alt="image3"/>
+                    <p class="testimonial-msg">I want to say a huge thank you to the<br>management of the store and all its<br>employees, I'm not a vegetarian, it<br>would seem that the store is not for<br>me, but it's not so, any person who<br>comes here will find something<br>useful.</p>
+                    <h3 class="testimonial-by">PETER GOODMAN</h3>
+                    <p class="job">MANAGER</p>
+                </div>
+            </div>
+        </section>
+
+<!-- Follow US-->
+
+        <section id="follow-section">
+            <div id="left-section">
+                <img src="hud.png" alt="Left Image"/>
+                
+                <!--<img src="https://mobirise.com/extensions/organicamp/assets/images/19.jpg" alt="Left Image"/>-->
+            </div>
+            <div id="right-section">
+                <div id="text-wrapper">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <h3>Follow Us</h3>
+                    <p>A wide range of products; many unusual and tasty products; courteous staff.</p>
+                    <input id="subscribe-email" placeholder="Your Email">
+                    <input id="subscribe-btn" type="submit" value="Submit">
+                </div>
+            </div>
+        </section>
+
+<!--Stats Section-->
+
+        <section id="stats-section">
+            <div id="stats-wrapper">
+                <div class="stats-item">
+                    <h3>1</h3>
+                    <p>Year of begining</p>
+                </div>
+                <div class="stats-item">
+                    <h3>1M+</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stats-item">
+                    <h3>72k+</h3>
+                    <p>100% Satisfaction</p>
+                </div>
+                <div class="stats-item">
+                    <h3>2M+</h3>
+                    <p>Instagram Family</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!--video section-->
+        <section id="video-section">
+            <div>
+                <h3>What we work on!</h3>
+                <div id="line-seperator">
+                </div>
+                <iframe frameborder="0" allowfullscreen src="https://player.vimeo.com/video/275412279" ></iframe>
+            </div>
+        </section>
+
+<!--Last Section-->
+
+        <section id="address-section">
+            <div id="address-wrapper">
+                <div>
+                    <p class="green-heading">Contact Us</p>
+                    <h3 class="section-heading">Address Information</h3>
+                    <p class="section-description">Thank you for supporting us.</p>
+                    <h4 class="address-heading">Streakzy India</h4>
+                    <p class="address-lines">
+                        Pinge Road <br>
+                        Kajubag, Karwar <br>
+                        Karnataka India <br>
+                        581301<br>
+                        contact@streakzy.in</p>
+                    <h4 class="address-heading">Job Vacancies</h4>
+                    <p class="address-lines">
+                        Contact us at: vacancy@streakzy.in</p>
+                </div>
+                <div>
+                    <p class="green-heading">Support us!</p>
+                    <h3 class="section-heading">Get In Touch</h3>
+                    <p class="section-description">Write us your queries and we will be right back to you within 3 hours.</p>
+                    <form>
+                        <input class="input-box" type="text" name="name" placeholder="Name">
+                        <input class="input-box" type="text" name="phone" placeholder="Phone">
+                        <input class="input-box" type="text" name="subject" placeholder="Subject">
+                        <input class="input-box" type="text" name="email" placeholder="Email">
+                        <input class="input-box" type="text" placeholder="Message" style="height: 80px;">
+                        <input type="submit" class="btn-submit" value="Submit Now">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &#169; Copyright 2022 Streakzy - All Rights Reserved
+    </footer>
+</body>
+</html>
